@@ -20,10 +20,11 @@ namespace Laboratorio1EstructuraDatos2
                 string[] parte = comando.Split(' ');
                 if (!((comando.StartsWith("rle.exe ") || comando.StartsWith("huff.exe")) && (parte[1].Equals("-c") || parte[1].Equals("-d")) && (parte[2].Equals("-f\""))))
                 {
-                    Console.WriteLine("Compress>Comando no valido.");
+                    
                     Console.WriteLine("rle.exe Ejecutar por el método RLE\nhuff.exe Ejecutar por el método Huffman");
                     Console.WriteLine("-c Comprimir\n-d Descomprimir");
                     Console.WriteLine("-f\"<Direccion del Archivo>\"");
+                    Console.WriteLine("Presione Cualquier tecla");
                     Console.ReadKey();
                     
                 }
@@ -37,6 +38,7 @@ namespace Laboratorio1EstructuraDatos2
 
                 if (comando.StartsWith("rle.exe"))//RLE
                 {
+                    Console.Clear();
                     if (parte[1].StartsWith("-c"))//Comprimir
                     {
                         Console.WriteLine("rle c");
@@ -50,6 +52,7 @@ namespace Laboratorio1EstructuraDatos2
                 }
                 else//HUFFMAN
                 {
+                    Console.Clear();
                     if (parte[1].StartsWith("-c"))//Comprimir
                     {
                         Console.WriteLine("huff c");

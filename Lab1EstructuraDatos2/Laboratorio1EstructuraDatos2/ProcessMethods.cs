@@ -14,6 +14,8 @@ namespace Laboratorio1EstructuraDatos2
         List<byte> BytesToWrite = new List<byte>();
         BinaryWriter bw = new BinaryWriter(File.Create("output.comp"));
         Dictionary<char, string> TableDecompress = new Dictionary<char, string>();
+
+        //DESCOMPRIMIR NO FUNCIONA
         public void Descomprimir(string FilenamesDes)
         {
             string Read;
@@ -57,7 +59,7 @@ namespace Laboratorio1EstructuraDatos2
                 else
                 {
                     byte b1 = Convert.ToByte(adder, 2);
-                    // (byte)Convert.ToInt32(adder);
+                 
 
                     BytesToWrite.Add(b1);
                     adder = "" + binary1;
@@ -76,7 +78,7 @@ namespace Laboratorio1EstructuraDatos2
             {
 
                 byte c1 = Convert.ToByte(adder, 2);
-                //(byte)Convert.ToInt32(adder);
+                
                 BytesToWrite.Add(c1);
 
             }
@@ -93,13 +95,13 @@ namespace Laboratorio1EstructuraDatos2
         
         public List<HuffmanNode> getListFromFile(string Paths1)
         {
-            List<HuffmanNode> nodeList = new List<HuffmanNode>();  // Node List.
+            List<HuffmanNode> nodeList = new List<HuffmanNode>();  
 
            
             
             
             String filename = Paths1;
-            //Descomprimir(filename);
+            
             try
             {
                 

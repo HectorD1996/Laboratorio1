@@ -49,7 +49,7 @@ namespace Laboratorio1EstructuraDatos2
                     pMethods.PrintfLeafAndCodes(nodeList[0]);
                     pMethods.Binary();
                     Console.WriteLine("\n\n");
-                    
+                    Console.WriteLine("Compresion terminada");
                     Console.WriteLine("Cualquier tecla para continuar");
                     Console.WriteLine("Ingrese Exit para salir");
                     
