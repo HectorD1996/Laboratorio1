@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Compresor1
 {
@@ -16,6 +17,7 @@ namespace Compresor1
     	//		  false -> Huffman
     	public void comprimir(string path, bool tipo)
     	{
+         
     	}
     	public void descomprimir(string path, bool tipo)
     	{
