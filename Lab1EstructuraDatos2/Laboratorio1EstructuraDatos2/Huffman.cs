@@ -39,14 +39,14 @@ namespace Laboratorio1EstructuraDatos2
                     pMethods.getTreeFromList(nodeList);
                     pMethods.setCodeToTheTree("", nodeList[0]);
                     Console.WriteLine("\n\n");
-                    
-                   
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+                    pMethods.PrintfLeafAndCodes(nodeList[0]);
                     pMethods.Binary();
                     Console.WriteLine("\n\n");
                     

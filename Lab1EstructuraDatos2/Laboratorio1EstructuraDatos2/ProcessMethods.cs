@@ -45,8 +45,7 @@ namespace Laboratorio1EstructuraDatos2
         {
             string code = codeString;
             string adder = "";
-            bw.Write("\r\n");
-            bw.Write("END");
+           
             bw.Write("\r\n");
             foreach (char binary1 in code)
             {
@@ -155,29 +154,11 @@ namespace Laboratorio1EstructuraDatos2
 
 
         
-        public void PrintTree(int level, HuffmanNode node)
-        {
-            if (node == null)
-                return;
-            for (int i = 0; i < level; i++)
-            {
-                Console.Write("\t");
-            }
-            Console.Write("[" + node.symbol + "]");
-           
-            Console.WriteLine("(" + node.code + ")");
-            
-            PrintTree(level + 1, node.rightTree);
-            PrintTree(level + 1, node.leftTree);
-        }
+        
 
 
        
-        public void PrintInformation(List<HuffmanNode> nodeList)
-        {
-            foreach (var item in nodeList)
-                Console.WriteLine("Simbolo : {0} - Frequencia : {1}", item.symbol, item.frequency);
-        }
+        
 
 
         
@@ -188,7 +169,7 @@ namespace Laboratorio1EstructuraDatos2
             if (nodeList.leftTree == null && nodeList.rightTree == null)
             {
 
-                Console.WriteLine("Simbolo : {0} -  Codigo : {1}", nodeList.symbol, nodeList.code);
+                
                 bw.Write((byte)Convert.ToChar(nodeList.symbol));
                 string codeforTable = nodeList.code;
                 int k = codeforTable.Length;
