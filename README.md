@@ -16,4 +16,4 @@ La descompresion de Huffman no funciona
 
 El RLE crea una archivo formato .rlex en la carpeta o dirrecion del el original
 
-el Huffman crea un archivo output.comp en la carpeta bin de la solucion
+el Huffman crea un archivo output.comp en la carpeta bin de la solucion llamada "Laboratorio1EstructuraDatos2"
