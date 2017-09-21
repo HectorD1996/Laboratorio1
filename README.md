@@ -1,6 +1,11 @@
 # Laboratorio1
 
 Laboratorio  1 Estructura de Datos 2
+Hector Davila 1115814
+
+Salvador Grave 1321013
+
+
 
 Formato de ingreso de comandos:
 
